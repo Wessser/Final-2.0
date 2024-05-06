@@ -11,8 +11,8 @@ import { handleValidationErrors, checkAuth } from './utils/index.js';
 
 import { UserController, PostController } from './controllers/index.js';
 
-mongoose //========================================================================== Подключение к БД
-  .connect(process.env.MONGODB_URI)
+mongoose // Подключение к БД
+  .connect('mongodb+srv://wessertv:1QAZ2wsx3EDC.@cluster0.jdmcm3o.mongodb.net/')
   .then(() => console.log('DB ok'))
   .catch((err) => console.log('DB error', err));
 
